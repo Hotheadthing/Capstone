@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!c_5k8z5&h#81@*bjf4vmu^ppit9291-sa4$4ju**p1s7pwa#r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.53.133.63']
+ALLOWED_HOSTS = ['13.53.133.63','127.0.0.1']
 
 
 # Application definition
@@ -83,12 +83,12 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'USER':'admin',
-        # 'PASSWORD':'admin',
-        # 'HOST':'localhost',
-        # 'PORT':'5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'db1' ,
+        'USER':'postgres',
+        'PASSWORD':'12345678',
+        'HOST':'database-1.cx8uu2ywe4au.eu-north-1.rds.amazonaws.com',
+        'PORT':'5432',
     }
 }
 
@@ -126,8 +126,8 @@ SOCIALACCOUNT_PROVIDERS = {
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
         'APP': {
-            'client_id': '984506523440-leocqgnidbvq2crm1grmqt7gr0uh2hun.apps.googleusercontent.com',
-            'secret': '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',
+            'client_id': '556015776611-tcm7mhrfq8a16bsm0ei7vl7c7n9pc73q.apps.googleusercontent.com',
+            'secret': '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',
             'key': ''
         }
     }
